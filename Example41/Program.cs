@@ -19,5 +19,4 @@ int ElementsPositive (int[] inputArray)
 
 Console.WriteLine("Введи рандомные числа: ");
 int[] numberArray  = Console.ReadLine().Split(' ').Select(x=>int.Parse(x)).ToArray();
-
-Console.WriteLine($"Количество чисел больше нуля: {ElementsPositive (numberArray)}");
+Console.WriteLine($"Количество чисел больше нуля: {String.Join(" , ", ElementsPositive (numberArray))}");
